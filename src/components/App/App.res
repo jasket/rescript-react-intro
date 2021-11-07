@@ -5,7 +5,7 @@
 @react.component
 let make = () => {
   <div className="App">
-    <header className="App-header">
+    <header className={`border-1 border-black bg-gray-50`}>
       <img src={logo} className="App-logo" alt="logo" />
       <p>
         {React.string("Edit ")}
