@@ -1,13 +1,11 @@
 open ReactDomExperimental
 
-%%raw(`import './Index.css';`)
+%%raw(`import './assets/libs/tailwind/tailwind.css';`)
 
 switch createRootWithId("root") {
 | Some(root) => root->render(
     <React.StrictMode>
-      <div className={`border-1 border-black bg-gray-50`}>
-        <App />
-      </div>
+        <Routes />
     </React.StrictMode>
   )
 | None => ()
