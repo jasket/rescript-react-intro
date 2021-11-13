@@ -3,29 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@glennsl/bs-jest": "^0.6.0",
+    "@colisweb/reason-toolkit": "^8.2.6",
+    "@craco/craco": "^6.4.0",
+    "@glennsl/bs-jest": "^0.7.0",
     "@rescript/react": "^0.10.3",
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.2.2",
-    "bs-platform": "^8.3.3",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "bs-platform": "^9.0.2",
     "bs-react-testing-library": "^0.8.0",
     "npm-run-all": "^4.1.5",
     "react": "^0.0.0-experimental-ee069065d-20211105",
     "react-dom": "^0.0.0-experimental-ee069065d-20211105",
     "react-scripts": "^4.0.1",
     "reason-react": "^0.9.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "run-p start:*",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "postinstall": "bsb -make-world",
     "start:re": "bsb -make-world -w",
-    "start:cra": "react-scripts start",
+    "start:cra": "craco start",
     "prebuild": "bsb -clean-world -make-world"
   },
   "eslintConfig": null,
@@ -46,7 +47,8 @@
     "react-dom": "0.0.0-experimental-4ead6b530"
   },
   "devDependencies": {
-    "autoprefixer": "^9",
-    "postcss": "^7"
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }

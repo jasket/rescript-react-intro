@@ -1,12 +1,9 @@
 %%raw(`import './App.css';`)
 
-@bs.module("./logo.svg") external logo: string = "default"
-
 @react.component
 let make = () => {
   <div className="App">
     <header className={`border-1 border-black bg-gray-50`}>
-      <img src={logo} className="App-logo" alt="logo" />
       <p>
         {React.string("Edit ")}
         <code> {React.string("src/App.js")} </code>
